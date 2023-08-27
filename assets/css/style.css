@@ -63,11 +63,13 @@ p {
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px
 }
 
 .content {
@@ -85,6 +87,7 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+  
 }
 
 .benefit-lead {
@@ -135,7 +138,8 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+/* Class formatting for content subsections */
+.content_subsection {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,7 +147,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* Merged into ".search-engine-optimization"
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,8 +165,10 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+*/
 
-.search-engine-optimization img {
+/* Made redundant by adding "max-height": 200px to "Float-left" and "Float-Right" class instead */
+/*.search-engine-optimization img {
     max-height: 200px;
 }
 
@@ -172,7 +178,7 @@ p {
 
 .social-media-marketing img {
     max-height: 200px;
-}
+}*/
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
