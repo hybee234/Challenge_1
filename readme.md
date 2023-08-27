@@ -54,7 +54,7 @@ index.html and style.css files can be opened in Visual Studio Code
  
 
 ## Credits
-Othneildrew - for the <back to top> link!
+Othneildrew - for the "<back to top>" link!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
