@@ -1,13 +1,16 @@
+/* Universal Selector - set border-box, zero padding and margin */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element Selector - body text background colour */
 body {
     background-color: #d9dcd6;
 }
 
+/*Class selector header, padding, font, background, font folour - */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,68 +18,91 @@ body {
     color: #ffffff;
 }
 
+/* h1 selector within class=header*/
 .header h1 {
     display: inline-block;
     font-size: 3em;
 }
 
+/*h1 selector within class=header OR class=seo  */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/*nav select within class=header */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
-.header nav ul {
-    list-style-type: none;
-}
-
+/*listed item selector within unordered list, within nav, within class=header */
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
+/*Element selector - Anchor */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*Element selector - Paragraph */
 p {
     font-size: 1em;
 }
 
-.hero {
+/* Format main banner image */
+.banner_image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-    max-height: 200px
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-    max-height: 200px
-}
-
+/*Content panel sizing and display*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*Content panel subsectionsizing/display */
+.content_subsection {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Content subsection image alignment - left*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px
+}
+
+/* Content subsection image alignment -right */
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px
+}
+
+/* Content subsection heading*/
+.content_subsection h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/*Benefits panel sizing and display*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -89,36 +115,26 @@ p {
   
 }
 
-.benefit-section {
+/*Benefits subsection margin and colour */
+.benefit_subsection {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-section h3 {
+/*Benefits headings */
+.benefit_subsection h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/*Benefits images*/
 .benefit-img {
     display: block;
     margin: 10px auto;
     max-width: 150px; 
 }
 
-.content_subsection {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.content_subsection h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
+/*Footer panel sizing/display*/
 .footer {
     padding: 30px;
     clear: both;
@@ -126,6 +142,7 @@ p {
     text-align: center;
 }
 
+/*Footer heading*/
 .footer h2 {
     font-size: 1em;
 }
